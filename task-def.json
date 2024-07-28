@@ -1,0 +1,20 @@
+{
+    "family": "my-django-app-task",
+    "networkMode": "bridge",
+    "containerDefinitions": [
+      {
+        "name": "my-django-app-container",
+        "image": "211125437162.dkr.ecr.eu-north-1.amazonaws.com/my-django-app:latest",
+        "cpu": 256,
+        "memory": 512,
+        "essential": true,
+        "portMappings": [
+          {
+            "containerPort": 8000,
+            "hostPort": 8000
+          }
+        ]
+      }
+    ]
+  }
+  
